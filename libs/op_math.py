@@ -1,21 +1,16 @@
 # Basic math operations
 
-def suma(a, b):
+def add(a, b):
     return a + b
 
-def resta(a, b):
+def subtract(a, b):
     return a - b
 
-def multiplicacion(a, b):
+def multiply(a, b):
     return a * b
 
-def division(a, b):
-    try:
-        return a / b
-    
-    except ZeroDivisionError:
-        print("Ops! You can't divide by zero.")
-        return division(a, b)
+def divide(a, b):
+    return a / b
     
 # If user run this file
 if __name__ == "__main__":

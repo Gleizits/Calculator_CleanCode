@@ -40,8 +40,13 @@ def main():
                 print(f"The result of {num1} * {num2} is: {result}")
 
             elif choice == 4:
-                result = m.divide(num1, num2)
-                print(f"The result of {num1} / {num2} is: {result}")
+                try:
+                    result = m.divide(num1, num2)
+                    print(f"The result of {num1} / {num2} is: {result}")
+                
+                except ZeroDivisionError:
+                    print("Ops! You can't divide by zero.")
+                    continue
 
         except ValueError:
             print("Ops! Please enter a number.")
