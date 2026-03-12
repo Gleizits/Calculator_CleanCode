@@ -51,5 +51,6 @@ def main():
         except ValueError:
             print("Ops! Please enter a number.")
 
+# Run the main function
 if __name__ == "__main__":
     main()
